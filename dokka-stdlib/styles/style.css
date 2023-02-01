@@ -1170,8 +1170,12 @@ td.content {
     color: var(--active-section-color);
 }
 
-.platform-hinted > .content:not([data-active]),
-.tabs-section-body > *:not([data-active]) {
+.no-js .platform-bookmarks-row, .no-js .tabs-section {
+    display: none;
+}
+
+.js .platform-hinted > .content:not([data-active]),
+.js .tabs-section-body > *:not([data-active]) {
     display: none;
 }
 
