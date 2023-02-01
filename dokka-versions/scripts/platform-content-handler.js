@@ -304,7 +304,6 @@ function refreshFiltering() {
         )
     refreshFilterButtons()
     refreshPlatformTabs()
-    refreshNoContentNotification()
     refreshPlaygroundSamples()
 }
 
