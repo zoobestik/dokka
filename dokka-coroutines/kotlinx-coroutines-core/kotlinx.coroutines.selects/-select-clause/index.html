@@ -1,0 +1,142 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>SelectClause</title><meta name="robots" content="noindex, nofollow">
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+<a class="library-name--link" href="../../../index.html">
+                            kotlinx.coroutines
+                    </a>            </div>
+            <div class="library-version">1.7.1
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector common-like" data-active="" data-filter=":kotlinx-coroutines-core:dokkaHtmlPartial/commonMain">common</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="kotlinx-coroutines-core::kotlinx.coroutines.selects/SelectClause///PointingToDeclaration//1975948010">
+  <div class="breadcrumbs"><a href="../../index.html">kotlinx-coroutines-core</a><span class="delimiter">/</span><a href="../index.html">kotlinx.coroutines.selects</a><span class="delimiter">/</span><span class="current">SelectClause</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Select</span><wbr><span><span>Clause</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kotlinx-coroutines-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">interface </span><a href="index.html">SelectClause</a><span class="clearfix"><span class="floating-right">(<a href="https://github.com/kotlin/kotlinx.coroutines/tree/master/kotlinx-coroutines-core/common/src/selects/Select.kt#L132">source</a>)</span></span></div><p class="paragraph">Each <a href="../select.html">select</a> clause is specified with:</p><ol><li><p class="paragraph">the <a href="clause-object.html">object of this clause</a>,     such as the channel instance for <a href="../../kotlinx.coroutines.channels/-send-channel/on-send.html">SendChannel.onSend</a>;</p></li><li><p class="paragraph">the function that specifies how this clause     should be registered in the object above;</p></li><li><p class="paragraph">the function that modifies the internal result     (passed via <a href="../../../kotlinx-coroutines-core/kotlinx.coroutines.selects/-select-instance/try-select.html">SelectInstance.trySelect</a> or     <a href="../../../kotlinx-coroutines-core/kotlinx.coroutines.selects/-select-instance/select-in-registration-phase.html">SelectInstance.selectInRegistrationPhase</a>)     to the argument of the user-specified block.</p></li><li><p class="paragraph">the function that specifies how the internal result provided via     <a href="../../../kotlinx-coroutines-core/kotlinx.coroutines.selects/-select-instance/try-select.html">SelectInstance.trySelect</a> or <a href="../../../kotlinx-coroutines-core/kotlinx.coroutines.selects/-select-instance/select-in-registration-phase.html">SelectInstance.selectInRegistrationPhase</a>     should be processed in case of this <code class="lang-kotlin">select</code> cancellation while dispatching.</p></li></ol><h4 class="">Inheritors</h4><div class="table"><div class="table-row" data-filterable-current=":kotlinx-coroutines-core:dokkaHtmlPartial/commonMain" data-filterable-set=":kotlinx-coroutines-core:dokkaHtmlPartial/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../-select-clause0/index.html">SelectClause0</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":kotlinx-coroutines-core:dokkaHtmlPartial/commonMain" data-filterable-set=":kotlinx-coroutines-core:dokkaHtmlPartial/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../-select-clause1/index.html">SelectClause1</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":kotlinx-coroutines-core:dokkaHtmlPartial/commonMain" data-filterable-set=":kotlinx-coroutines-core:dokkaHtmlPartial/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../-select-clause2/index.html">SelectClause2</a></div></span></div><div></div></div></div></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="2000208575%2FProperties%2F1975948010" anchor-label="clauseObject" id="2000208575%2FProperties%2F1975948010" data-filterable-set=":kotlinx-coroutines-core:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":kotlinx-coroutines-core:dokkaHtmlPartial/commonMain" data-filterable-set=":kotlinx-coroutines-core:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="clause-object.html"><span>clause</span><wbr><span><span>Object</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2000208575%2FProperties%2F1975948010"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kotlinx-coroutines-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="clause-object.html">clauseObject</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1115531733%2FProperties%2F1975948010" anchor-label="onCancellationConstructor" id="1115531733%2FProperties%2F1975948010" data-filterable-set=":kotlinx-coroutines-core:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":kotlinx-coroutines-core:dokkaHtmlPartial/commonMain" data-filterable-set=":kotlinx-coroutines-core:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-cancellation-constructor.html"><span>on</span><wbr><span>Cancellation</span><wbr><span><span>Constructor</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1115531733%2FProperties%2F1975948010"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kotlinx-coroutines-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="on-cancellation-constructor.html">onCancellationConstructor</a><span class="token operator">: </span><a href="../index.html#-649189011%2FClasslikes%2F1975948010">OnCancellationConstructor</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="702776344%2FProperties%2F1975948010" anchor-label="processResFunc" id="702776344%2FProperties%2F1975948010" data-filterable-set=":kotlinx-coroutines-core:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":kotlinx-coroutines-core:dokkaHtmlPartial/commonMain" data-filterable-set=":kotlinx-coroutines-core:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="process-res-func.html"><span>process</span><wbr><span>Res</span><wbr><span><span>Func</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="702776344%2FProperties%2F1975948010"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kotlinx-coroutines-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="process-res-func.html">processResFunc</a><span class="token operator">: </span><a href="../index.html#591624097%2FClasslikes%2F1975948010">ProcessResultFunction</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-626089355%2FProperties%2F1975948010" anchor-label="regFunc" id="-626089355%2FProperties%2F1975948010" data-filterable-set=":kotlinx-coroutines-core:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":kotlinx-coroutines-core:dokkaHtmlPartial/commonMain" data-filterable-set=":kotlinx-coroutines-core:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="reg-func.html"><span>reg</span><wbr><span><span>Func</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-626089355%2FProperties%2F1975948010"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kotlinx-coroutines-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="reg-func.html">regFunc</a><span class="token operator">: </span><a href="../index.html#-739253044%2FClasslikes%2F1975948010">RegistrationFunction</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

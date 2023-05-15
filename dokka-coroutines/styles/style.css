@@ -1,6 +1,6 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300i,400,700);
-@import url('https://rsms.me/inter/inter.css');
-@import url('jetbrains-mono.css');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Inter');
+@import url('https://fonts.googleapis.com/css?family=JetBrains+Mono');
 
 /* --- root styles --- */
 :root {
@@ -26,7 +26,7 @@
     --background-color: var(--default-white);
     --dark-mode-and-search-icon-color: var(--default-white);
     --color-dark: #27282c;
-    --default-font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue, Arial, sans-serif;
+    --default-font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue, Arial, sans-serif;
     --default-monospace-font-family: JetBrains Mono, SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
     --default-font-size: 15px;
     --average-color: var(--color-dark);
@@ -91,7 +91,7 @@ body, table {
     font-style: normal;
     font-weight: normal;
     font-size: var(--default-font-size);
-    line-height: 24px;
+    line-height: 1.6;
     margin: 0;
 }
 
@@ -427,10 +427,6 @@ td:first-child {
     display: none;
 }
 
-/*.theme-dark .sidebar {
-    box-shadow: inset 0 1px 0 0 hsl(0deg 0% 100% / 30%);
-}*/
-
 @media (max-width: 759px) {
     #container {
         position: relative;
@@ -695,7 +691,7 @@ code:not(.block) {
     display: none;
 }
 
-.sample-container:hover span.copy-icon {
+.js .sample-container:hover span.copy-icon {
     display: inline-block;
 }
 
@@ -731,7 +727,7 @@ code:not(.block) {
     box-sizing: border-box;
     box-shadow: 0 5px 10px var(--ring-popup-shadow-color);
     border-radius: 3px;
-    color: initial;
+    color: var(--default-font-color);
 }
 
 .copy-popup-wrapper > .copy-popup-icon::before {
@@ -1040,13 +1036,12 @@ p.paragraph img {
 }
 
 .platform-tag {
+    --platform-tag-color: #bababb;
     border: 0 none;
-    border-radius: 4px;
-    padding: 2px 16px;
     margin-right: 4px;
     margin-bottom: 8px;
 
-    font-family: "JetBrains Sans", Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+    font-family: var(--default-font-family);
     font-size: 13px;
     line-height: 1.5;
     text-transform: capitalize;
@@ -1055,37 +1050,32 @@ p.paragraph img {
 .platform-tag.js-like, .platform-tag.jvm-like, .platform-tag.wasm-like {
     text-transform: uppercase;
 }
+
 .filter-section .platform-tag {
     cursor: pointer;
+    border-radius: 4px;
+    padding: 2px 16px;
 }
 
 .filter-section .platform-tag.jvm-like[data-active], .platform-tags .platform-tag.jvm-like {
-    background-color: #4dbb5f;
+    --platform-tag-color: #4dbb5f;
 }
 
 .filter-section .platform-tag.js-like[data-active], .platform-tags .platform-tag.js-like {
-    background-color: #ffc700;
+    --platform-tag-color: #ffc700;
 }
 
 .filter-section .platform-tag.native-like[data-active], .platform-tags .platform-tag.native-like {
-    background-color: #E082F3;
+    --platform-tag-color: #E082F3;
 }
 
 .filter-section .platform-tag.wasm-like[data-active], .platform-tags .platform-tag.wasm-like {
-    background-color: #9585F9;
+    --platform-tag-color: #9585F9;
 }
 
 .filter-section .platform-tag[data-active]:hover {
     color: #fff;
     background-color: rgba(186, 186, 187, .7);
-}
-
-@media (min-width: 940px) {
-    .filter-section .platform-tag {
-        font-size: 16px;
-        border-radius: 24px;
-        padding: 8px 24px;
-    }
 }
 
 .filter-section .platform-tag:not([data-active]) {
@@ -1097,9 +1087,27 @@ p.paragraph img {
     background-color: rgba(255,255,255,.05);
 }
 
-.filter-section .platform-tag[data-active], .platform-tag {
+.filter-section .platform-tag[data-active] {
     color: #19191c;
-    background-color: #bababb;
+    background-color: var(--platform-tag-color);
+}
+
+.platform-tags .platform-tag {
+    display: flex;
+    align-items: center;
+}
+
+.platform-tags .platform-tag::before {
+    display: inline-block;
+    content: '';
+    border-radius: 50%;
+    background: var(--platform-tag-color);
+    margin: 0 4px 0 8px;
+    height: 8px;
+    width: 8px;
+
+    font-size: 13px;
+    line-height: 1.6;
 }
 
 td.content {
@@ -1186,7 +1194,7 @@ td.content {
 }
 
 .js .platform-hinted > .content:not([data-active]),
-.js .tabs-section-body > *:not([data-active]) {
+.js .tabs-section-body *[data-togglable]:not([data-active]) {
     display: none;
 }
 
@@ -1407,3 +1415,41 @@ div.runnablesample {
     content: url("../images/footer-go-to-link.svg");
 }
 /* /--- footer --- */
+
+/* Logo styles */
+:root {
+    --dokka-logo-image-url: url('../images/logo-icon.svg');
+    --dokka-logo-height: 50px;
+    --dokka-logo-width: 50px;
+}
+
+.library-name--link {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-weight: 700;
+}
+
+.library-name--link::before {
+    content: '';
+    background: var(--dokka-logo-image-url) center no-repeat;
+    background-size: var(--dokka-logo-height) var(--dokka-logo-width);
+    margin-right: 5px;
+    width: var(--dokka-logo-height);
+    height: var(--dokka-logo-width);
+}
+
+@media (max-width: 759px) {
+    .library-name--link::before {
+        display: none;
+    }
+}
+/* / Logo styles */
+
+/*
+the hack to hide the headers inside tabs for a package page because each tab
+has only one header, and the header text is the same as the tab name, so no point in showing it
+*/
+.main-content[data-page-type="package"] .tabs-section-body h2 {
+    display: none;
+}

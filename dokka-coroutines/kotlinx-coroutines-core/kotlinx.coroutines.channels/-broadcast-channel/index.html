@@ -19,7 +19,6 @@
     </script>
 <script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
 <link href="../../../styles/style.css" rel="Stylesheet">
-<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
 <link href="../../../styles/main.css" rel="Stylesheet">
 <link href="../../../styles/prism.css" rel="Stylesheet">
 <link href="../../../styles/logo-styles.css" rel="Stylesheet">
@@ -39,7 +38,7 @@
 <a class="library-name--link" href="../../../index.html">
                             kotlinx.coroutines
                     </a>            </div>
-            <div class="library-version">1.6.4
+            <div class="library-version">1.7.1
             </div>
         </div>
         <div class="filter-section" id="filter-section">
@@ -56,89 +55,89 @@
                 <div class="sidebar--inner" id="sideMenu"></div>
             </div>
             <div id="main">
-<div class="main-content" id="content" pageids="kotlinx-coroutines-core::kotlinx.coroutines.channels/BroadcastChannel///PointingToDeclaration//1975948010">
+<div class="main-content" data-page-type="classlike" id="content" pageids="kotlinx-coroutines-core::kotlinx.coroutines.channels/BroadcastChannel///PointingToDeclaration//1975948010">
   <div class="breadcrumbs"><a href="../../index.html">kotlinx-coroutines-core</a><span class="delimiter">/</span><a href="../index.html">kotlinx.coroutines.channels</a><span class="delimiter">/</span><span class="current">BroadcastChannel</span></div>
   <div class="cover ">
     <h1 class="cover"><span>Broadcast</span><wbr><span><span>Channel</span></span></h1>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kotlinx-coroutines-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="../../kotlinx.coroutines/-obsolete-coroutines-api/index.html"><span class="token annotation builtin">ObsoleteCoroutinesApi</span></a></div></div><span class="token keyword">interface </span><a href="index.html">BroadcastChannel</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="index.html">E</a><span class="token operator">&gt;</span> : <a href="../-send-channel/index.html">SendChannel</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="index.html">E</a><span class="token operator">&gt; </span><span class="clearfix"><span class="floating-right">(<a href="https://github.com/kotlin/kotlinx.coroutines/tree/master/kotlinx-coroutines-core/common/src/channels/BroadcastChannel.kt#L27">source</a>)</span></span></div><p class="paragraph">Broadcast channel is a non-blocking primitive for communication between the sender and multiple receivers that subscribe for the elements using <a href="open-subscription.html">openSubscription</a> function and unsubscribe using <a href="../-receive-channel/cancel.html">ReceiveChannel.cancel</a> function.</p><p class="paragraph">See <code class="lang-kotlin">BroadcastChannel()</code> factory function for the description of available broadcast channel implementations.</p><p class="paragraph"><strong>Note: This API is obsolete since 1.5.0.</strong> It will be deprecated with warning in 1.6.0 and with error in 1.7.0. It is replaced with <a href="../../kotlinx.coroutines.flow/-shared-flow/index.html">SharedFlow</a>.</p><h4 class="">Inheritors</h4><div class="table" data-togglable="Inheritors"><div class="table-row" data-filterable-current=":kotlinx-coroutines-core:dokkaHtmlPartial/commonMain" data-filterable-set=":kotlinx-coroutines-core:dokkaHtmlPartial/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../-conflated-broadcast-channel/index.html">ConflatedBroadcastChannel</a></div></span></div><div></div></div></div></div></div></div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kotlinx-coroutines-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="../../kotlinx.coroutines/-obsolete-coroutines-api/index.html"><span class="token annotation builtin">ObsoleteCoroutinesApi</span></a></div></div><span class="token keyword">interface </span><a href="index.html"><strike>BroadcastChannel</strike></a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="index.html">E</a><span class="token operator">&gt;</span> : <a href="../-send-channel/index.html">SendChannel</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="index.html">E</a><span class="token operator">&gt; </span><span class="clearfix"><span class="floating-right">(<a href="https://github.com/kotlin/kotlinx.coroutines/tree/master/kotlinx-coroutines-core/common/src/channels/BroadcastChannel.kt#L32">source</a>)</span></span></div><div class="deprecation-content"><h3 class="">Deprecated</h3><p class="paragraph">BroadcastChannel is deprecated in the favour of SharedFlow and is no longer supported</p></div><p class="paragraph">Broadcast channel is a non-blocking primitive for communication between the sender and multiple receivers that subscribe for the elements using <a href="open-subscription.html">openSubscription</a> function and unsubscribe using <a href="../-receive-channel/cancel.html">ReceiveChannel.cancel</a> function.</p><p class="paragraph">See <code class="lang-kotlin">BroadcastChannel()</code> factory function for the description of available broadcast channel implementations.</p><p class="paragraph"><strong>Note: This API is obsolete since 1.5.0 and deprecated for removal since 1.7.0</strong> It is replaced with <a href="../../kotlinx.coroutines.flow/-shared-flow/index.html">SharedFlow</a>.</p><h4 class="">Inheritors</h4><div class="table"><div class="table-row" data-filterable-current=":kotlinx-coroutines-core:dokkaHtmlPartial/commonMain" data-filterable-set=":kotlinx-coroutines-core:dokkaHtmlPartial/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../-conflated-broadcast-channel/index.html">ConflatedBroadcastChannel</a></div></span></div><div></div></div></div></div></div></div>
   </div>
   <div class="tabbedcontent">
-    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Functions">Functions</button><button class="section-tab" data-togglable="Extensions">Extensions</button></div>
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button><button class="section-tab" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION,EXTENSION_PROPERTY,EXTENSION_FUNCTION">Members &amp; Extensions</button></div>
     <div class="tabs-section-body">
-      <h2 class="">Functions</h2>
-      <div class="table" data-togglable="Functions"><a data-name="444964986%2FFunctions%2F1975948010" anchor-label="cancel" id="444964986%2FFunctions%2F1975948010" data-filterable-set=":kotlinx-coroutines-core:dokkaHtmlPartial/commonMain"></a>
-        <div class="table-row" data-filterable-current=":kotlinx-coroutines-core:dokkaHtmlPartial/commonMain" data-filterable-set=":kotlinx-coroutines-core:dokkaHtmlPartial/commonMain">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="cancel.html"><span><span>cancel</span></span></a></div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="796660473%2FFunctions%2F1975948010" anchor-label="asFlow" id="796660473%2FFunctions%2F1975948010" data-filterable-set=":kotlinx-coroutines-core:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":kotlinx-coroutines-core:dokkaHtmlPartial/commonMain" data-filterable-set=":kotlinx-coroutines-core:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../kotlinx.coroutines.flow/as-flow.html"><span>as</span><wbr><span><span>Flow</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="796660473%2FFunctions%2F1975948010"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kotlinx-coroutines-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../kotlinx.coroutines.flow/as-flow.html">T</a><span class="token operator">&gt; </span><a href="index.html">BroadcastChannel</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../kotlinx.coroutines.flow/as-flow.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="../../kotlinx.coroutines.flow/as-flow.html"><span class="token function"><strike>asFlow</strike></span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../kotlinx.coroutines.flow/-flow/index.html">Flow</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../kotlinx.coroutines.flow/as-flow.html">T</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Represents the given broadcast channel as a hot flow. Every flow collector will trigger a new broadcast channel subscription.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="444964986%2FFunctions%2F1975948010" anchor-label="cancel" id="444964986%2FFunctions%2F1975948010" data-filterable-set=":kotlinx-coroutines-core:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":kotlinx-coroutines-core:dokkaHtmlPartial/commonMain" data-filterable-set=":kotlinx-coroutines-core:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="cancel.html"><span><span>cancel</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="444964986%2FFunctions%2F1975948010"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kotlinx-coroutines-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="cancel.html"><span class="token function">cancel</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">cause<span class="token operator">: </span><a href="../../kotlinx.coroutines/-cancellation-exception/index.html">CancellationException</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Cancels reception of remaining elements from this channel with an optional cause. This function closes the channel with the specified cause (unless it was already closed), removes all buffered sent elements from it, and <a href="../-receive-channel/cancel.html">cancels</a> all open subscriptions. A cause can be used to specify an error message or to provide other details on a cancellation reason for debugging purposes.</p></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kotlinx-coroutines-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="cancel.html"><span class="token function">cancel</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">cause<span class="token operator">: </span><a href="../../kotlinx.coroutines/-cancellation-exception/index.html">CancellationException</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Cancels reception of remaining elements from this channel with an optional cause. This function closes the channel with the specified cause (unless it was already closed), removes all buffered sent elements from it, and <a href="../-receive-channel/cancel.html">cancels</a> all open subscriptions. A cause can be used to specify an error message or to provide other details on a cancellation reason for debugging purposes.</p></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+<a data-name="1226188161%2FFunctions%2F1975948010" anchor-label="consume" id="1226188161%2FFunctions%2F1975948010" data-filterable-set=":kotlinx-coroutines-core:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":kotlinx-coroutines-core:dokkaHtmlPartial/commonMain" data-filterable-set=":kotlinx-coroutines-core:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../consume.html"><span><span>consume</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1226188161%2FFunctions%2F1975948010"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kotlinx-coroutines-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="../../kotlinx.coroutines/-obsolete-coroutines-api/index.html"><span class="token annotation builtin">ObsoleteCoroutinesApi</span></a></div></div><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../consume.html">E</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="../consume.html">R</a><span class="token operator">&gt; </span><a href="index.html">BroadcastChannel</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../consume.html">E</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="../consume.html"><span class="token function"><strike>consume</strike></span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">block<span class="token operator">: </span><span class="token keyword"></span><a href="../-receive-channel/index.html">ReceiveChannel</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../consume.html">E</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="../consume.html">R</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../consume.html">R</a></div><div class="brief "><p class="paragraph">Opens subscription to this <a href="index.html">BroadcastChannel</a> and makes sure that the given <a href="../consume.html">block</a> consumes all elements from it by always invoking <a href="../-receive-channel/cancel.html">cancel</a> after the execution of the block.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-967694465%2FFunctions%2F1975948010" anchor-label="consumeEach" id="-967694465%2FFunctions%2F1975948010" data-filterable-set=":kotlinx-coroutines-core:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":kotlinx-coroutines-core:dokkaHtmlPartial/commonMain" data-filterable-set=":kotlinx-coroutines-core:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../consume-each.html"><span>consume</span><wbr><span><span>Each</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-967694465%2FFunctions%2F1975948010"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kotlinx-coroutines-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">inline suspend </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../consume-each.html">E</a><span class="token operator">&gt; </span><a href="index.html">BroadcastChannel</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../consume-each.html">E</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="../consume-each.html"><span class="token function"><strike>consumeEach</strike></span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">action<span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span><a href="../consume-each.html">E</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Subscribes to this <a href="index.html">BroadcastChannel</a> and performs the specified action for each received element.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
 <a data-name="738540908%2FFunctions%2F1975948010" anchor-label="openSubscription" id="738540908%2FFunctions%2F1975948010" data-filterable-set=":kotlinx-coroutines-core:dokkaHtmlPartial/commonMain"></a>
-        <div class="table-row" data-filterable-current=":kotlinx-coroutines-core:dokkaHtmlPartial/commonMain" data-filterable-set=":kotlinx-coroutines-core:dokkaHtmlPartial/commonMain">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="open-subscription.html"><span>open</span><wbr><span><span>Subscription</span></span></a></div>
+          <div class="table-row" data-filterable-current=":kotlinx-coroutines-core:dokkaHtmlPartial/commonMain" data-filterable-set=":kotlinx-coroutines-core:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="open-subscription.html"><span>open</span><wbr><span><span>Subscription</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="738540908%2FFunctions%2F1975948010"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kotlinx-coroutines-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="open-subscription.html"><span class="token function">openSubscription</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-receive-channel/index.html">ReceiveChannel</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="index.html">E</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Subscribes to this <a href="index.html">BroadcastChannel</a> and returns a channel to receive elements from it. The resulting channel shall be <a href="../-receive-channel/cancel.html">cancelled</a> to unsubscribe from this broadcast channel.</p></div></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <h2 class="tabbedcontent">Extensions</h2>
-      <div class="table" data-togglable="Extensions"><a data-name="796660473%2FExtensions%2F1975948010" anchor-label="asFlow" id="796660473%2FExtensions%2F1975948010" data-filterable-set=":kotlinx-coroutines-core:dokkaHtmlPartial/commonMain"></a>
-        <div class="table-row" data-filterable-current=":kotlinx-coroutines-core:dokkaHtmlPartial/commonMain" data-filterable-set=":kotlinx-coroutines-core:dokkaHtmlPartial/commonMain">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="../../kotlinx.coroutines.flow/as-flow.html"><span>as</span><wbr><span><span>Flow</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="796660473%2FExtensions%2F1975948010"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kotlinx-coroutines-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../kotlinx.coroutines.flow/as-flow.html">T</a><span class="token operator">&gt; </span><a href="index.html">BroadcastChannel</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../kotlinx.coroutines.flow/as-flow.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="../../kotlinx.coroutines.flow/as-flow.html"><span class="token function"><strike>asFlow</strike></span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../kotlinx.coroutines.flow/-flow/index.html">Flow</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../kotlinx.coroutines.flow/as-flow.html">T</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Represents the given broadcast channel as a hot flow. Every flow collector will trigger a new broadcast channel subscription.</p></div></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-<a data-name="1226188161%2FExtensions%2F1975948010" anchor-label="consume" id="1226188161%2FExtensions%2F1975948010" data-filterable-set=":kotlinx-coroutines-core:dokkaHtmlPartial/commonMain"></a>
-        <div class="table-row" data-filterable-current=":kotlinx-coroutines-core:dokkaHtmlPartial/commonMain" data-filterable-set=":kotlinx-coroutines-core:dokkaHtmlPartial/commonMain">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="../consume.html"><span><span>consume</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1226188161%2FExtensions%2F1975948010"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kotlinx-coroutines-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="../../kotlinx.coroutines/-obsolete-coroutines-api/index.html"><span class="token annotation builtin">ObsoleteCoroutinesApi</span></a></div></div><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../consume.html">E</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="../consume.html">R</a><span class="token operator">&gt; </span><a href="index.html">BroadcastChannel</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../consume.html">E</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="../consume.html"><span class="token function">consume</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">block<span class="token operator">: </span><span class="token keyword"></span><a href="../-receive-channel/index.html">ReceiveChannel</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../consume.html">E</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="../consume.html">R</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../consume.html">R</a></div><div class="brief "><p class="paragraph">Opens subscription to this <a href="index.html">BroadcastChannel</a> and makes sure that the given <a href="../consume.html">block</a> consumes all elements from it by always invoking <a href="../-receive-channel/cancel.html">cancel</a> after the execution of the block.</p></div></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-<a data-name="-967694465%2FExtensions%2F1975948010" anchor-label="consumeEach" id="-967694465%2FExtensions%2F1975948010" data-filterable-set=":kotlinx-coroutines-core:dokkaHtmlPartial/commonMain"></a>
-        <div class="table-row" data-filterable-current=":kotlinx-coroutines-core:dokkaHtmlPartial/commonMain" data-filterable-set=":kotlinx-coroutines-core:dokkaHtmlPartial/commonMain">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="../consume-each.html"><span>consume</span><wbr><span><span>Each</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-967694465%2FExtensions%2F1975948010"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kotlinx-coroutines-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="../../kotlinx.coroutines/-obsolete-coroutines-api/index.html"><span class="token annotation builtin">ObsoleteCoroutinesApi</span></a></div></div><span class="token keyword">inline suspend </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../consume-each.html">E</a><span class="token operator">&gt; </span><a href="index.html">BroadcastChannel</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../consume-each.html">E</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="../consume-each.html"><span class="token function">consumeEach</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">action<span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span><a href="../consume-each.html">E</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Subscribes to this <a href="index.html">BroadcastChannel</a> and performs the specified action for each received element.</p></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kotlinx-coroutines-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="open-subscription.html"><span class="token function">openSubscription</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-receive-channel/index.html">ReceiveChannel</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="index.html">E</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Subscribes to this <a href="index.html">BroadcastChannel</a> and returns a channel to receive elements from it. The resulting channel shall be <a href="../-receive-channel/cancel.html">cancelled</a> to unsubscribe from this broadcast channel.</p></div></div></div>
+                </div>
               </div>
             </div>
           </div>
